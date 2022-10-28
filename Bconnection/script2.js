@@ -8,7 +8,7 @@ let auth ;
 const login = async (e)=>{
     e.preventDefault();
     const log_object = {
-        "user_name":user_name.value,
+        "user_name":login_user_name.value,
         "password":login_password.value
     };
     await fetch (login_url , {
