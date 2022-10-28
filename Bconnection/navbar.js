@@ -35,7 +35,7 @@ const sign_in = document.getElementById('sign_in')
 const show1 = ()=>{
 //    console.log(user_name1);
    if ( token1==""){
-      sign_in.innerHTML = '<a href="./sign-in/sign-in.html" class="contact_form up">Sign In</a>'
+      sign_in.innerHTML = '<a href="./index.html" class="contact_form up">Sign In</a>'
     }else {
        sign_in.innerHTML = `<a href="./user_profile.html" class="contact_form up" style="width:6vw; height:6vh; border-radius: 15px;"> <i class="fa fa-user fa-lg"style="color:white;" aria-hidden="true""></i></a>`
     }

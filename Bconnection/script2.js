@@ -25,8 +25,8 @@ const login = async (e)=>{
             localStorage.setItem("auth_token" , auth);
             const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-18)}index.html`);
-            // window.location.replace("http://127.0.0.1:5500/frontend_new/index.html");
+            window.location.replace(`${winurl.substring(0,length-18)}dashboard.html`);
+            // window.location.replace("http://127.0.0.1:5500/frontend_new/dashboard.html");
         }else {
             alert1.innerHTML = `<div class="alert" ><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             ${data.message}

@@ -35,7 +35,7 @@ const user_name = queryString.substring(1);
         if ( data.value === 0 ) {
             const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-21)}user_profile.html`);
+            window.location.replace(`https://blog-gify.netlify.app/user_profile.html`);
         }
         else if (data.value===-1) {
             alert.innerHTML = `<div class="alert" ><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
