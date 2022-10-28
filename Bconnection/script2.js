@@ -19,18 +19,17 @@ const login = async (e)=>{
         body:JSON.stringify(log_object)
     }).then(async (response) =>{
         const data = await response.json();
-        console.log(data.message);
+        console.log(data);
         if ( data.value === 0 ) {
           auth = data.authtoken ;
             localStorage.setItem("auth_token" , auth);
             const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-18)}dashboard.html`);
+            window.location.replace(`https://blog-gify.netlify.app/dashboard.html`);
             // window.location.replace("http://127.0.0.1:5500/frontend_new/dashboard.html");
         }else {
             alert1.innerHTML = `<div class="alert" ><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            ${data.message}
-            </div> `
+            Invalid Credentials            </div> `
             window.scroll(0 , window.top)
         }
         
