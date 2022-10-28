@@ -60,7 +60,7 @@ if ( user_conf_password.value === user_password.value){
                 localStorage.setItem("auth_token" , auth)
                 const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-20)}dashboard.html`);
+            window.location.replace(`https://blog-gify.netlify.app/dashboard.html`);
                 // window.location.replace("http://127.0.0.1:5500/frontend_new/dashboard.html");
             }
         

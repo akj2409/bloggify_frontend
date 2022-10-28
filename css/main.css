@@ -354,7 +354,8 @@ Navbar
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
   border-top: 1px solid;
-  font-weight: 500;
+  font-weight: 800;
+  
   color: rgb(108, 108, 190);
 
 }

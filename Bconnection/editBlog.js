@@ -89,7 +89,7 @@ const addblog_local = async(e)=>{
         if ( data.value === 0 ) {
             const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-16)}user_profile.html`);
+            window.location.replace(`https://blog-gify.netlify.app/user_profile.html`);
             // window.location.replace("http://127.0.0.1:5500/frontend_new/user_profile.html");
         }
         else if (data.value===-1) {

@@ -17,9 +17,7 @@ const submit_contact_form = async () =>{
     "email":email1.value,
     "message":message1.value
  };
- name1.value = '';
- message1.value = '';
- email1.value = '';
+ 
  console.log(object);
  await fetch (baseurl , {
     method:'POST',
@@ -38,11 +36,15 @@ const submit_contact_form = async () =>{
         alert.innerHTML = `<div class="alert" ><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         Invalid Email .. 
         </div> `
+       
     }else {
         alert.innerHTML = `<div class="alert" ><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         Try After Sometime .. 
         </div> `
-    }
+        
+    }name1.value = '';
+    message1.value = '';
+    email1.value = '';
     window.scroll( 0 , window.top);
  }).catch((err)=>{
     console.log(err);
