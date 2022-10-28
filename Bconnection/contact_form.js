@@ -10,6 +10,7 @@ const name1 = document.getElementById('contact_name');
 const contact_form = document.getElementById('send_now')
 const alert = document.getElementById('alert');
 const baseurl = 'https://blog-gify.herokuapp.com/api/contact' ;
+
 const submit_contact_form = async () =>{
  const object = {
     "name":name1.value,
@@ -19,6 +20,7 @@ const submit_contact_form = async () =>{
  name1.value = '';
  message1.value = '';
  email1.value = '';
+ console.log(object);
  await fetch (baseurl , {
     method:'POST',
     headers:{

@@ -26,7 +26,7 @@ const deletecomment = async ()=>{
         const blog_id = localStorage.getItem("blog_id") ;
         const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-20)}read_blog.html?${blog_id}`);
+            window.location.replace(`https://blog-gify.netlify.app/read_blog.html?${blog_id}`);
       }).catch(err=>{
         console.log(err);
       })

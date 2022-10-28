@@ -21,7 +21,7 @@ const deleteblog = async ()=>{
         // console.log(data);
         const winurl = window.location.href ;
             let length = winurl.length ;
-            window.location.replace(`${winurl.substring(0,length-18)}user_profile.html`);
+            window.location.replace(`https://blog-gify.netlify.app/user_profile.html`);
         // window.location.replace("http://127.0.0.1:5500/frontend_new/user_profile.html")
       }).catch(err=>{
         console.log(err);
