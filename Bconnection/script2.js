@@ -1,6 +1,6 @@
 // java script for login 
- const alert1 = document.getElementById('alert1');
-const user_name = document.getElementById('user_name');
+ const alert1 = document.getElementById('alert');
+const login_user_name = document.getElementById('login_user_name');
 const login_password = document.getElementById('login_password')
 const login_btn = document.getElementById('login_submit');
 const login_url = 'https://blog-gify.herokuapp.com/api/auth/login' ;

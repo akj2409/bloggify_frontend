@@ -9,10 +9,10 @@ const submit_btn_signin = document.getElementById('submit_signin');
 const alert = document.getElementById('alert')
 const baseurl = 'https://blog-gify.herokuapp.com/api/auth/signup';
 
-let auth ;
+let auth1 ;
 const signup = async (e)=>{
     e.preventDefault();
-const object ={
+const object1 ={
     "user_name":user_name.value,
     "email":user_email.value,
     "password":user_password.value,
@@ -24,7 +24,7 @@ if ( user_conf_password.value === user_password.value){
         headers:{
             "Content-Type":"application/json",
         },
-        body: JSON.stringify(object)
+        body: JSON.stringify(object1)
      }).then(async (response) =>{
         const data = await response.json();
         if ( data.value == -1 ) {
@@ -56,8 +56,8 @@ if ( user_conf_password.value === user_password.value){
                 </div> `
                 window.scroll(0 , window.top)
             }if ( data.value == 0 ){
-                auth = data.authtoken ;
-                localStorage.setItem("auth_token" , auth)
+                auth1 = data.authtoken ;
+                localStorage.setItem("auth_token" , auth1)
                 const winurl = window.location.href ;
             let length = winurl.length ;
             window.location.replace(`https://blog-gify.netlify.app/dashboard.html`);
