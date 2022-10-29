@@ -64,7 +64,7 @@ function showblogs(item) {
     <div class="details">
     <p id="desc">Writing Date ${dt2}</p>
       <h3><b id="tag">${item.tag}</b></h3>
-      <h3 id="title">${item.title}</h3>
+      <h3 id="title" style="font-size:13px;">${item.title}</h3>
       <p id="desc">${desc}</p>
     </div>
                  <a href="read_blog.html?${item.id}" class="btn" style="float: right;">Read More</a>

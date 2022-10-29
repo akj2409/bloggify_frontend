@@ -32,7 +32,7 @@ function showblogs(item) {
      </div>
      <div class="details">
        <h3><b>${item.tag}</b></h3>
-       <h3>${item.title}</h3>
+       <h3 id="ctitle">${item.title}</h3>
        <p>${desc}</p>
        <div class="nav-link contact-link">
                    <a href="read_blog.html?${item.id}" class="btn" style="float: right;">Read More</a>
