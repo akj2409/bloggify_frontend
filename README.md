@@ -38,7 +38,7 @@ Bloggify is a dynamic blogging web application that allows users to share their 
 
 Follow these steps to set up and run the Bloggify application locally:
 
-1. Clone the repository: [Repository Link](https://github.com/yourusername/bloggify-repo)
+1. Clone the repository: [Repository Link](https://github.com/akj2409/bloggify_frontend)
 2. Navigate to the `backend` directory and install the backend dependencies using `npm install`.
 3. Create a PostgreSQL database and update the database configuration in the `backend/config.js` file.
 4. Run the backend server using `npm start` in the `backend` directory.
@@ -52,8 +52,8 @@ Contributions are highly appreciated! If you want to contribute to the project, 
 
 If you have any questions or feedback, feel free to contact us:
 
-- Aditya Kumar Chain (Backend Developer) - aditya@example.com
-- Ankit Sankhyan (Frontend Developer) - ankit@example.com
+- Aditya Kumar Chain (Backend) - [Github Profile](https://github.com/akj2409)
+- Ankit Sankhyan (Frontend) - [Github Profile](https://github.com/ankitsankhyan)
 
 ## License
 
